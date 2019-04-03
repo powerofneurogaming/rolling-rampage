@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody myRB;
     public Rigidbody cameraRB;
+    public Rigidbody particleRB;
     public GameObject cursor;
 
     public Camera myCamera;
@@ -120,10 +121,12 @@ public class PlayerController : MonoBehaviour
     void CameraMovment()
     {
         cameraRB.velocity = Vector3.forward * cameraSpeed;
-    }
+        // match the particle systems to the camera.
+        particleRB.velocity = Vector3.forward * cameraSpeed;
+}
 
-    //calculate the distance between the ball and the camera
-    void BallCameraDistance()
+//calculate the distance between the ball and the camera
+void BallCameraDistance()
     {
         currentBallDistance = Vector3.Distance(new Vector3(0,0, myCamera.transform.position.z), new Vector3(0,0, transform.position.z));
     }
@@ -136,6 +139,7 @@ public class PlayerController : MonoBehaviour
             Destroy(this.gameObject);
             LevelManager.LM.gameOverPanel.SetActive(true);
             cameraRB.velocity = Vector3.zero;
+            particleRB.velocity = Vector3.zero;
             LevelManager.LM.isStarted = false;
         }
     }
@@ -148,6 +152,7 @@ public class PlayerController : MonoBehaviour
         {
             LevelManager.LM.winPannel.SetActive(true);
             cameraRB.velocity = Vector3.zero;
+            particleRB.velocity = Vector3.zero;
             LevelManager.LM.isStarted = false;
         }
     }
