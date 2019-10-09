@@ -11045,7 +11045,7 @@ PrefabInstance:
     - target: {fileID: 175755031124712528, guid: efd7a74481680484fa1ec0bced89ba5c,
         type: 3}
       propertyPath: levelNumber
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 175755031124712543, guid: efd7a74481680484fa1ec0bced89ba5c,
         type: 3}
@@ -11374,5 +11374,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 292848583}
+    - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
+        type: 3}
+      propertyPath: m_Text
+      value: LEVEL 05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545a22a07d35bba4da240e5c67a5505c, type: 3}

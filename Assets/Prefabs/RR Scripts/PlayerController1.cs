@@ -4,11 +4,10 @@ using UnityEngine;
 using Tobii.Gaming;
 
 
-public class PlayerController : MonoBehaviour
+public class PlayerController1 : MonoBehaviour
 {
     Rigidbody myRB;
     Rigidbody cameraRB;
-    public Rigidbody particleRB;
     public GameObject cursor;
 
     public Camera myCamera;
@@ -31,26 +30,21 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!LevelManager.LM.isStarted)
+        if (LevelManager.LM.isStarted)
         {
-            return;
+            HorizontalMovement();
+            ForwardMovment();
         }
-        //if (Input.GetButton("Fire1"))
-        //{
-        //    HorizontalMovement();
-        //}
-        HorizontalMovement();
-        ForwardMovment();
     }
 
     // Updates camera after physics update
     private void FixedUpdate()
     {
-        if (!LevelManager.LM.isStarted)
+        if (LevelManager.LM.isStarted)
         {
-            return;
+            // Moves the camera forward at a constant speed to the ball is not always in the center of the screen
+            cameraRB.velocity = Vector3.forward * cameraSpeed;
         }
-        CameraMovment();
     }
 
     // Moves the ball side to side in accordance with the position of a ray cast
@@ -80,7 +74,6 @@ public class PlayerController : MonoBehaviour
     // Moves the ball forward at a speed of variable "ballSpeed"
     void ForwardMovment()
     {
-        float upDownSpeed = Input.GetAxis("Mouse Y") * bonusBallSpeed;
         // Calculate the distance between the ball and the camera
         currentBallDistance = Vector3.Distance(new Vector3(0, 0, myCamera.transform.position.z), new Vector3(0, 0, transform.position.z));
 
@@ -88,31 +81,11 @@ public class PlayerController : MonoBehaviour
         if (currentBallDistance < maxBallDistance && currentBallDistance > minBallDistance)
         {
             myRB.velocity = Vector3.forward * ballSpeed;
-            if (Input.GetButton("Fire1"))
-            {
-                myRB.velocity = Vector3.forward * (ballSpeed + upDownSpeed);
-            }
         }
         else
         {
             myRB.velocity = Vector3.forward * cameraSpeed;
-            if (Input.GetButton("Fire1"))
-            {
-                if ((currentBallDistance >= maxBallDistance && upDownSpeed < 0) || (currentBallDistance <= minBallDistance && upDownSpeed > 0))
-                {
-                    myRB.velocity = Vector3.forward * (ballSpeed + upDownSpeed);
-                }
-            }
         }
-    }
-
-    // Moves the camera forward at a constant speed to the ball is not always in the center of the screen
-    void CameraMovment()
-    {
-        cameraRB.velocity = Vector3.forward * cameraSpeed;
-        // Match the particle systems to the camera.
-        if (particleRB != null)
-            particleRB.velocity = Vector3.forward * cameraSpeed;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -123,8 +96,6 @@ public class PlayerController : MonoBehaviour
             Destroy(this.gameObject);
             LevelManager.LM.gameOverPanel.SetActive(true);
             cameraRB.velocity = Vector3.zero;
-            if (particleRB != null)
-                particleRB.velocity = Vector3.zero;
             LevelManager.LM.isStarted = false;
         }
     }
@@ -136,8 +107,6 @@ public class PlayerController : MonoBehaviour
         {
             LevelManager.LM.winPannel.SetActive(true);
             cameraRB.velocity = Vector3.zero;
-            if (particleRB != null)
-                particleRB.velocity = Vector3.zero;
             LevelManager.LM.isStarted = false;
         }
     }
