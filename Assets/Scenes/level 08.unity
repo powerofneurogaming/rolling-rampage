@@ -1696,6 +1696,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2937463844310282478, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1704,7 +1709,7 @@ PrefabInstance:
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 66
+      value: 74
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e, type: 3}
@@ -3453,6 +3458,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2937463844310282478, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937463844310282478, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -3462,6 +3477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e, type: 3}
@@ -3736,15 +3756,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2937463844310282478, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 62
+      value: 66
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e, type: 3}
@@ -3901,14 +3926,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4884333179422877668, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
-      propertyPath: myCamera
-      value: 
-      objectReference: {fileID: 617985995}
-    - target: {fileID: 4884333179422877668, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
-        type: 3}
       propertyPath: cursor
       value: 
       objectReference: {fileID: 1508930583}
+    - target: {fileID: 4884333179422877668, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
+        type: 3}
+      propertyPath: myCamera
+      value: 
+      objectReference: {fileID: 617985995}
+    - target: {fileID: 1893127004, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 1508930583}
+    - target: {fileID: 1893127004, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
+      propertyPath: myCamera
+      value: 
+      objectReference: {fileID: 617985995}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
 --- !u!1001 &1375297280
@@ -5460,6 +5493,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2937463844310282478, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -5468,7 +5506,7 @@ PrefabInstance:
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 62
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e, type: 3}
@@ -6411,6 +6449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937463844310282478, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2365895428435702999, guid: 5a9c8f2dd899df94b8b17de8cf0cf38e,
         type: 3}

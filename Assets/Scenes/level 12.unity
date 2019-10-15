@@ -274,6 +274,7 @@ MonoBehaviour:
   minBallDistance: 1
   maxBallDistance: 40
   currentBallDistance: 0
+  tobiiOn: 0
 --- !u!114 &404570364 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 175755031124712528, guid: efd7a74481680484fa1ec0bced89ba5c,
@@ -860,7 +861,7 @@ PrefabInstance:
     - target: {fileID: 175755031124712528, guid: efd7a74481680484fa1ec0bced89ba5c,
         type: 3}
       propertyPath: levelNumber
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 175755031124712543, guid: efd7a74481680484fa1ec0bced89ba5c,
         type: 3}

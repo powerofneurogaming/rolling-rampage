@@ -904,8 +904,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f9c85b7f82dc74a9dcbaeb0d99edc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursor: {fileID: 1508930583}
-  myCamera: {fileID: 617985995}
   lerpSpeed: 1
   ballSpeed: 1
   cameraSpeed: 4
@@ -913,6 +911,7 @@ MonoBehaviour:
   minBallDistance: 1
   maxBallDistance: 40
   currentBallDistance: 0
+  tobiiOn: 0
 --- !u!1001 &404460438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2990,6 +2989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884333179422877665, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
+        type: 3}
+      propertyPath: m_Drag
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}

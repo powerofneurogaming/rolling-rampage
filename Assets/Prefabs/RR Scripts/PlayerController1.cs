@@ -3,37 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using Tobii.Gaming;
 
-
 public class PlayerController1 : MonoBehaviour
 {
     Rigidbody myRB;
-    Rigidbody cameraRB;
-    public GameObject cursor;
-
-    public Camera myCamera;
-    public float lerpSpeed;
+    GameObject cursor;
+    GameObject myCamera;
 
     public float ballSpeed;
     public float cameraSpeed;
-    public float bonusBallSpeed;
-
-    public float minBallDistance;
-    public float maxBallDistance;
-    public float currentBallDistance;
+    public bool tobiiOn;
 
     void Start()
     {
         myRB = GetComponent<Rigidbody>();
-        myCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
-        cameraRB = myCamera.GetComponent<Rigidbody>();
+        myCamera = GameObject.Find("Main Camera");
+        cursor = GameObject.Find("black cursor");
     }
 
     void Update()
     {
         if (LevelManager.LM.isStarted)
         {
-            HorizontalMovement();
-            ForwardMovment();
+            PlayerMovement();
         }
     }
 
@@ -43,49 +34,23 @@ public class PlayerController1 : MonoBehaviour
         if (LevelManager.LM.isStarted)
         {
             // Moves the camera forward at a constant speed to the ball is not always in the center of the screen
-            cameraRB.velocity = Vector3.forward * cameraSpeed;
+            myCamera.transform.position += Vector3.forward * cameraSpeed * Time.deltaTime;
         }
     }
 
     // Moves the ball side to side in accordance with the position of a ray cast
-    void HorizontalMovement(){
-
-        if (TobiiAPI.GetUserPresence() == UserPresence.Present)
+    void PlayerMovement(){
+        Plane plane = new Plane(Vector3.up, Vector3.zero);
+        Ray screenRay = Camera.main.ScreenPointToRay(tobiiOn ? TobiiAPI.GetGazePoint().Screen : (Vector2)Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(screenRay, out hit,100))
         {
-            Plane plane = new Plane(Vector3.up, Vector3.zero);
-            Ray screenRay = Camera.main.ScreenPointToRay(TobiiAPI.GetGazePoint().Screen);
-            RaycastHit hit;
-            //float hitDistance = 0;
-            if (Physics.Raycast(screenRay, out hit,100))
-            {
-                cursor.transform.position = new Vector3(hit.point.x, hit.point.y + .66f, hit.point.z);
-                transform.position = Vector3.Lerp(transform.position, new Vector3(hit.point.x, .775f, cursor.transform.position.z), lerpSpeed * Time.deltaTime);
-            }
+            cursor.transform.position = new Vector3(hit.point.x, hit.point.y + .66f, hit.point.z);
+            myRB.AddForce((new Vector3(hit.point.x, .775f, cursor.transform.position.z) - transform.position) * 50);
         }
-
-        //Ray ray = myCamera.ScreenPointToRay(Input.mousePosition);
-        //RaycastHit hit;
-        //if(Physics.Raycast(ray,out hit, 100))
-        //{
-        //    transform.position = Vector3.Lerp(transform.position, new Vector3(hit.point.x, transform.position.y, transform.position.z), lerpSpeed * Time.deltaTime);
-        //}
-    }
-
-    // Moves the ball forward at a speed of variable "ballSpeed"
-    void ForwardMovment()
-    {
-        // Calculate the distance between the ball and the camera
-        currentBallDistance = Vector3.Distance(new Vector3(0, 0, myCamera.transform.position.z), new Vector3(0, 0, transform.position.z));
 
         // If the ball is within bounds the ball will move at "ballSpeed", otherwise the ball will move at the camera speed
-        if (currentBallDistance < maxBallDistance && currentBallDistance > minBallDistance)
-        {
-            myRB.velocity = Vector3.forward * ballSpeed;
-        }
-        else
-        {
-            myRB.velocity = Vector3.forward * cameraSpeed;
-        }
+        myRB.AddForce(Vector3.forward * 100 * cameraSpeed);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -95,7 +60,6 @@ public class PlayerController1 : MonoBehaviour
         {
             Destroy(this.gameObject);
             LevelManager.LM.gameOverPanel.SetActive(true);
-            cameraRB.velocity = Vector3.zero;
             LevelManager.LM.isStarted = false;
         }
     }
@@ -106,7 +70,6 @@ public class PlayerController1 : MonoBehaviour
         if(other.tag == "FinishLine")
         {
             LevelManager.LM.winPannel.SetActive(true);
-            cameraRB.velocity = Vector3.zero;
             LevelManager.LM.isStarted = false;
         }
     }
