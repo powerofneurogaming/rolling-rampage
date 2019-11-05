@@ -574,15 +574,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TryAgain
       objectReference: {fileID: 0}
-    - target: {fileID: 4857412213086506234, guid: 545a22a07d35bba4da240e5c67a5505c,
-        type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
         type: 3}
       propertyPath: m_Text
       value: LEVEL 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857412213086506234, guid: 545a22a07d35bba4da240e5c67a5505c,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4857412214453953630, guid: 545a22a07d35bba4da240e5c67a5505c,
         type: 3}
@@ -755,6 +755,11 @@ PrefabInstance:
       propertyPath: cursor
       value: 
       objectReference: {fileID: 1508930583}
+    - target: {fileID: 4884333179422877668, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4884333179422877665, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
       propertyPath: m_Interpolate
@@ -773,6 +778,10 @@ PrefabInstance:
       propertyPath: myCamera
       value: 
       objectReference: {fileID: 617985995}
+    - target: {fileID: 369025546, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
 --- !u!1 &1508930583 stripped

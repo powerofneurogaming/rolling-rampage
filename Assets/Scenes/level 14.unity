@@ -1108,6 +1108,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Segment 26
       objectReference: {fileID: 0}
+    - target: {fileID: 5183075221661143561, guid: 44d086ebe20a7a84fad007dbd973cdfb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5183075221661143558, guid: 44d086ebe20a7a84fad007dbd973cdfb,
         type: 3}
       propertyPath: m_LocalPosition.x
