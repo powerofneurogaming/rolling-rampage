@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -763,7 +763,7 @@ PrefabInstance:
     - target: {fileID: 4884333179422877668, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4884333179422877665, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
@@ -785,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 617985995}
     - target: {fileID: 369025546, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884333179422877666, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
@@ -807,6 +807,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 175755031124712529, guid: efd7a74481680484fa1ec0bced89ba5c,
+        type: 3}
+      propertyPath: m_Name
+      value: Level Manager
+      objectReference: {fileID: 0}
     - target: {fileID: 175755031124712528, guid: efd7a74481680484fa1ec0bced89ba5c,
         type: 3}
       propertyPath: startPannel
@@ -826,11 +831,6 @@ PrefabInstance:
         type: 3}
       propertyPath: levelNumber
       value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 175755031124712529, guid: efd7a74481680484fa1ec0bced89ba5c,
-        type: 3}
-      propertyPath: m_Name
-      value: Level Manager
       objectReference: {fileID: 0}
     - target: {fileID: 175755031124712543, guid: efd7a74481680484fa1ec0bced89ba5c,
         type: 3}
@@ -1034,6 +1034,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5043016665732425559, guid: 56d05903812ca0a49a4e790f28a363ab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 303718068611387114, guid: 56d05903812ca0a49a4e790f28a363ab,
         type: 3}
       propertyPath: m_Name
@@ -1097,11 +1102,6 @@ PrefabInstance:
     - target: {fileID: 303718068611387113, guid: 56d05903812ca0a49a4e790f28a363ab,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5043016665732425559, guid: 56d05903812ca0a49a4e790f28a363ab,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
