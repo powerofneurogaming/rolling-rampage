@@ -1965,6 +1965,15 @@ PrefabInstance:
       propertyPath: particleRB
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4884333179422877668, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 369025546, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
 --- !u!1 &422434629
@@ -4012,11 +4021,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 36286750}
     m_Modifications:
-    - target: {fileID: 6701880484588992566, guid: ae44da6183b5ba4488dad220f07d1973,
-        type: 3}
-      propertyPath: m_Name
-      value: Half Cone
-      objectReference: {fileID: 0}
     - target: {fileID: 6701880484588992562, guid: ae44da6183b5ba4488dad220f07d1973,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4081,6 +4085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1422734
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701880484588992566, guid: ae44da6183b5ba4488dad220f07d1973,
+        type: 3}
+      propertyPath: m_Name
+      value: Half Cone
       objectReference: {fileID: 0}
     - target: {fileID: 6701880484588992564, guid: ae44da6183b5ba4488dad220f07d1973,
         type: 3}
@@ -4320,11 +4329,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 36286750}
     m_Modifications:
-    - target: {fileID: 6701880484588992566, guid: ae44da6183b5ba4488dad220f07d1973,
-        type: 3}
-      propertyPath: m_Name
-      value: Half Cone (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6701880484588992562, guid: ae44da6183b5ba4488dad220f07d1973,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4389,6 +4393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.14227
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701880484588992566, guid: ae44da6183b5ba4488dad220f07d1973,
+        type: 3}
+      propertyPath: m_Name
+      value: Half Cone (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6701880484588992564, guid: ae44da6183b5ba4488dad220f07d1973,
         type: 3}
