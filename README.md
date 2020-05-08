@@ -3,5 +3,5 @@ An Eye Tracking Game
 
 Description:
 
-## Comments Here:
-xDDDD
+## Add Comments Here:
+Hello my name is Khalil Jackson :)
