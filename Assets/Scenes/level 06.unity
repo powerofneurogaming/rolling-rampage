@@ -308,6 +308,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 4884333179422877671, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4884333179422877664, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1301,6 +1306,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
+        type: 3}
+      propertyPath: m_Text
+      value: LEVEL 06
+      objectReference: {fileID: 0}
     - target: {fileID: 4857412213086506232, guid: 545a22a07d35bba4da240e5c67a5505c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1316,10 +1326,5 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 292848583}
-    - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
-        type: 3}
-      propertyPath: m_Text
-      value: LEVEL 06
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545a22a07d35bba4da240e5c67a5505c, type: 3}

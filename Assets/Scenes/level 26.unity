@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1575,7 +1575,7 @@ HingeJoint:
   m_Anchor: {x: 0.45, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.18367177, y: -0.26556012, z: 0.2906599}
+  m_ConnectedAnchor: {x: 0.18367177, y: -0.26556012, z: 0.29066086}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2353,6 +2353,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
+        type: 3}
+      propertyPath: m_Text
+      value: LEVEL 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857412213086506234, guid: 545a22a07d35bba4da240e5c67a5505c,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4857412213086506232, guid: 545a22a07d35bba4da240e5c67a5505c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2382,16 +2392,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TryAgain
-      objectReference: {fileID: 0}
-    - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
-        type: 3}
-      propertyPath: m_Text
-      value: LEVEL 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4857412213086506234, guid: 545a22a07d35bba4da240e5c67a5505c,
-        type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4857412214453953630, guid: 545a22a07d35bba4da240e5c67a5505c,
         type: 3}
@@ -3194,7 +3194,7 @@ PrefabInstance:
     - target: {fileID: 4884333179422877671, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4884333179422877664, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
@@ -3266,6 +3266,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4884333179422877666, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d97f85b10e70064ca1e8fffeb7378d2, type: 2}
     - target: {fileID: 4884333179422877665, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
       propertyPath: m_Interpolate
@@ -3288,11 +3293,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4884333179422877666, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9d97f85b10e70064ca1e8fffeb7378d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8, type: 3}
 --- !u!1 &1367373755
@@ -4488,7 +4488,7 @@ HingeJoint:
   m_Anchor: {x: 0.45, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.17867178, y: -0.26556012, z: -0.2807827}
+  m_ConnectedAnchor: {x: 0.17867166, y: -0.26556012, z: -0.2807846}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -5169,7 +5169,7 @@ HingeJoint:
   m_Anchor: {x: 0.45, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.31882817, y: -0.26556012, z: 0}
+  m_ConnectedAnchor: {x: -0.31882828, y: -0.26556012, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -5741,7 +5741,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.9999998, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.5844938, y: 1.6093359, z: 21.051403}
+  m_ConnectedAnchor: {x: 5.0476565, y: 1.6093359, z: 65.800125}
   m_UseSpring: 0
   m_Spring:
     spring: 0

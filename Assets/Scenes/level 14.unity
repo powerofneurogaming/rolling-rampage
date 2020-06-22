@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -544,6 +544,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
+        type: 3}
+      propertyPath: m_Text
+      value: LEVEL 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857412213086506234, guid: 545a22a07d35bba4da240e5c67a5505c,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4857412213086506232, guid: 545a22a07d35bba4da240e5c67a5505c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -573,16 +583,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TryAgain
-      objectReference: {fileID: 0}
-    - target: {fileID: 4857412213935291785, guid: 545a22a07d35bba4da240e5c67a5505c,
-        type: 3}
-      propertyPath: m_Text
-      value: LEVEL 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4857412213086506234, guid: 545a22a07d35bba4da240e5c67a5505c,
-        type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4857412214453953630, guid: 545a22a07d35bba4da240e5c67a5505c,
         type: 3}
@@ -689,6 +689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884333179422877671, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4884333179422877664, guid: b5d41cd9b4cb0b944947ab85a1fdc4f8,
         type: 3}
